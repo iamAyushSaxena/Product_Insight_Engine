@@ -1,0 +1,17 @@
+review_id,user_name,review_text,rating,date
+1,User123,"This app is fantastic! The new update made it so much faster and easier to use. I love the dark mode feature.",5,2025-10-01
+2,JaneDoe,"I used to love this app, but after the last update, it crashes every time I try to open it. So frustrating!",1,2025-10-02
+3,ReviewerZ,"It's an okay app. Does the job but the user interface feels a bit outdated and clunky.",3,2025-10-02
+4,AppFan,"Absolutely brilliant. The best app for productivity. The customer support is also very responsive.",5,2025-10-03
+5,TechGuru,"The login process is a nightmare. It keeps asking for authentication and fails half the time. Please fix the login bug.",2,2025-10-04
+6,RandomUser,"The performance is really slow on my older phone. It takes ages to load.",2,2025-10-05
+7,MikeR,"The app is good, but payment fails frequently. I tried to subscribe but the payment screen just froze.",2,2025-10-06
+8,SarahK,"I'm not sure what changed, but the app is now draining my battery really fast. Never had this problem before.",1,2025-10-07
+9,ProUser,"A solid application that meets all my needs. The export feature is a lifesaver.",4,2025-10-08
+10,Newbie,"It works as expected. Nothing special, but no major issues either.",3,2025-10-09
+11,CriticOne,"Horrible user experience. The buttons are too small and the navigation is confusing. I can never find what I'm looking for.",1,2025-10-10
+12,HappyGal,"Five stars! This app has changed the way I organize my work. Simple, intuitive, and powerful.",5,2025-10-11
+13,FrustratedFred,"Why are there so many ads now? It makes the app almost unusable. The payment system to remove them also failed.",2,2025-10-12
+14,CasualReviewer,"It's pretty decent. I use it once a week.",4,2025-10-12
+15,PowerUser99,"The recent feature addition is exactly what I was looking for. Keep up the great work, team!",5,2025-10-13
+16,BugHunter,"Another bug found. The search function returns irrelevant results. The search is completely broken.",2,2025-10-13
