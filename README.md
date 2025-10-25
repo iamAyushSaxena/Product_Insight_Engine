@@ -1,26 +1,56 @@
-# Product Manager's Insight Engine: Sentiment Analysis of Customer Reviews
+# Product Manager's Insight Engine: Sentiment Analysis Dashboard
 
-## 🚀 Problem Statement
+This project is an interactive web dashboard built with Streamlit that automatically analyzes customer app reviews. It transforms raw, unstructured feedback into actionable insights for Product Managers, helping to identify user sentiment, pinpoint key pain points, and make data-driven decisions for the product roadmap.
 
-As a product grows, so does the volume of user feedback. For a Product Manager, manually sifting through thousands of app store reviews to find actionable insights is inefficient and prone to bias. This project, the **Product Manager's Insight Engine**, is a Python tool that automates the analysis of customer reviews to provide a clear, data-driven overview of user sentiment and key pain points.
+---
 
-The goal is to transform raw, unstructured feedback into a strategic asset that can inform the product roadmap, prioritize bug fixes, and measure user satisfaction over time.
+## 📊 Live Dashboard Screenshots
 
-## ✨ Key Features & Analysis
+Here is a full overview of the dashboard's interface and key insight sections.
 
-* **Automated Sentiment Scoring:** Uses NLTK's VADER (Valence Aware Dictionary and sEntiment Reasoner) to assign a sentiment score (Positive, Negative, Neutral) to each review.
-* **Quantitative Summary:** Provides a clear terminal output with the total count and percentage of reviews in each sentiment category.
-* **Sentiment Distribution Visualization:** Generates and saves a bar chart (`sentiment_distribution.png`) for an at-a-glance understanding of overall user happiness.
-* **Pain Point Identification:** Creates a word cloud (`negative_keywords_wordcloud.png`) from negative reviews to visually highlight recurring complaints and keywords like "crash," "slow," "login," and "bug."
+### Main Dashboard
+![Product Insight Engine Dashboard](images/dashboard.png)
 
-## 🛠️ Tech Stack
+### Negative Keywords Word Cloud
+![Negative Keywords Word Cloud](images/negative_keywords.png)
 
-* **Language:** Python 3.x
-* **Libraries:**
-    * Pandas: For data manipulation and analysis.
-    * NLTK (VADER): For sentiment analysis.
-    * Matplotlib: For generating static plots.
-    * WordCloud: For creating word cloud visualizations.
+### Top Negative Keyword Frequency
+![Negative Keyword Frequency Table](images/negative_keywords_frequency.png)
+
+---
+
+## ✨ Key Features
+
+* **Interactive Dashboard:** A live, web-based UI built with Streamlit.
+* **Real-Time Analysis:** Loads and analyzes a CSV of app reviews instantly.
+* **At-a-Glance Metrics:** Displays high-level KPIs: Total Reviews, Positive %, Negative %, and Neutral %.
+* **Interactive Sentiment Chart:** An interactive bar chart (built with Altair) showing the distribution of Positive, Negative, and Neutral reviews.
+* **Visual Pain Point Identification:** Automatically generates a "Negative Keywords" word cloud to visually highlight the most common complaints.
+* **Actionable Keyword Table:** A sortable table that lists the top negative keywords by frequency, ranked as "High," "Medium," or "Low" priority.
+* **Raw Data Explorer:** An optional, expandable section to view and search the entire raw dataset.
+
+---
+
+## 🧰 Tech Stack
+
+* **Core:** Python
+* **Web App/Dashboard:** Streamlit
+* **Data Analysis:** Pandas
+* **NLP (Sentiment Analysis):** NLTK (VADER)
+* **NLP (Tokenization):** NLTK (Punkt)
+* **Interactive Charting:** Altair
+* **Visualizations:** WordCloud, Matplotlib
+
+---
+
+## 👤 Author
+
+**Ayush Saxena**
+- GitHub: [iamAyushSaxena](https://github.com/iamAyushSaxena)
+- LinkedIn: [Ayush Saxena](https://www.linkedin.com/in/ayush-saxena-39a300225/)
+- Email: aysaxena8880@gmail.com
+
+---
 
 ## ⚙️ Setup & Installation
 
@@ -33,18 +63,20 @@ The goal is to transform raw, unstructured feedback into a strategic asset that 
 2.  **Create a virtual environment (recommended):**
     ```bash
     python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    .\venv\Scripts\activate  # On Windows
+    # source vVenv/bin/activate  # On Mac/Linux
     ```
 
 3.  **Install the required libraries:**
     ```bash
     pip install -r requirements.txt
     ```
-    The first time you run the script, it will automatically download necessary NLTK data.
+
+---
 
 ## 🏃‍♀️ How to Run the Project
 
-Ensure your review data is in `data/app_reviews.csv`. Then, simply run the main script from the root directory:
+With your virtual environment active, simply run the following command from your project's root directory:
 
 ```bash
-python main.py
+streamlit run app.py
