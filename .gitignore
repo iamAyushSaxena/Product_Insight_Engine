@@ -1,0 +1,14 @@
+# Python Virtual Environment
+# This is the most important one!
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# VS Code editor configuration
+.vscode/
+
+# Operating System files
+.DS_Store
+Thumbs.db

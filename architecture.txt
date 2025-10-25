@@ -1,0 +1,36 @@
+Project Architecture & Data Flow
+------------------------------------------------------------------------------------
+
+
+                  +-------------------------+
+                  |                         |
+                  |   app_reviews.csv       |
+                  |   (Raw User Feedback)   |
+                  |                         |
+                  +-----------+-------------+
+                              |
+                              | (Load Data)
+                              v
+      +-------------------------------------------------------------+
+      |                                                             |
+      |   Python Script (main.py)                                   |
+      |                                                             |
+      |   [1. Load with Pandas] -> [2. Analyze Sentiment w/ NLTK]   |
+      |          |                                                  |
+      |          | (DataFrame with sentiment scores)                |
+      |          v                                                  |
+      |   [3. Generate Summary & Visualizations]                    |
+      |       - Aggregate counts                                    |
+      |       - Create Bar Chart (Matplotlib)                       |
+      |       - Create Word Cloud (WordCloud)                       |
+      |                                                             |
+      +-----------------------+------------------+------------------+
+                              |                  |                  |
+            (Write to Console)|       (Save .png)|       (Save .png)|
+                              v                  v                  v
+                  +-----------------+  +-----------------+  +----------------------+
+                  | Terminal Output |  | sentiment_      |  | negative_keywords_   |
+                  | (PM Summary)    |  | distribution.png|  | wordcloud.png        |
+                  +-----------------+  +-----------------+  +----------------------+
+
+------------------------------------------------------------------------------------
